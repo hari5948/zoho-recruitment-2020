@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+string word;
+cin>> word;
+int len = word.size();
+ 
+    // Finding middle index of string
+    int middle = len / 2;
+ 
+    // Print the middle character
+    // of the string
+   
+    cout<< '\n' ;
+     
+    string newWord = word.substr(word.length()/2, word.length());
+newWord = newWord + word.substr(0, word.length()/2);
+
+cout<< newWord;
+
+    
+}
